@@ -52,6 +52,11 @@ dsh-ocgo-usage/
 └── package.json
 ```
 
+## 更新日志 / Changelog
+
+- **0.1.1**：改用 Node 内置 https 取数（不再依赖 shell/python，修复 Windows 沙箱报错）；角标改显本月剩余用量（带 `(本月)` 后缀）
+- **0.1.0**：初版，左下角用量按钮 + 悬停明细卡片，每 60 秒刷新
+
 ## FAQ
 
 **为什么 Windows 上会报 sandbox 错误？** 0.1.0 用 `ctx.shell` 跑 python 脚本取数，会触发 shell 沙箱检查；Windows 上可用的后端要求 ACL 临时目录位于 workspace 之外，不满足即拒绝执行。0.1.1 改用 Node 内置 `https` 直接请求，不再依赖 shell 与 python，Windows / macOS / Linux 均正常。
