@@ -34,7 +34,7 @@ dsh plugin --profile web add github:badai147/dsh-ocgo-usage
 
 1. 在 DSH 设置中配置 opencode-go 供应商（含 API key）——插件自动读取，无需额外配置
 2. 悬停左下角「Go 用量」按钮查看明细
-3. 常驻角标显示本月剩余用量百分比（如已用 5% 则显示 `95%`）
+3. 常驻角标显示本月剩余用量百分比（如本月已用 5% 则显示 `95% (本月)`）
 
 ## 工作原理 / How it works
 
