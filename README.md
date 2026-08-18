@@ -39,6 +39,7 @@ dsh plugin --profile web add github:badai147/dsh-ocgo-usage
 - **Host**（`lib/index.js`）：注册 DSH web server 路由 `GET /api/ocgo-usage`，按序读取 DSH 供应商配置中的 opencode-go API key，代理请求 `https://opencode.ai/zen/go/v1/usage`；key 只在本机处理，不下发浏览器
 - **Client**（`lib/client.js`）：手写 `window.__ModuleLoader__.load` bundle，注册 `sidebar.footer.action` 按钮 + `shell.overlay` 悬浮卡片，通过本地路由取数
 - **刷新**：激活即拉取，之后每 60 秒自动刷新
+- **跨平台**：Host 用 Node 内置 `https` 直接发请求，不依赖 shell 与 python，Windows / macOS / Linux 均可用
 
 ## 目录结构 / Structure
 
