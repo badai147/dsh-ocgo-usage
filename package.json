@@ -1,0 +1,45 @@
+{
+  "name": "@badai147/dsh-ocgo-usage",
+  "version": "0.1.0",
+  "description": "OpenCode Go usage stats for the DeepSeek Harness Web GUI: compact bottom-left sidebar button with a hover detail card",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "plugin",
+    "opencode-go",
+    "usage",
+    "stats"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badai147/dsh-ocgo-usage.git"
+  },
+  "homepage": "https://github.com/badai147/dsh-ocgo-usage#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ]
+}
