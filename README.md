@@ -52,6 +52,12 @@ dsh-ocgo-usage/
 └── package.json
 ```
 
+## FAQ
+
+**为什么 Windows 上会报 sandbox 错误？** 0.1.0 用 `ctx.shell` 跑 python 脚本取数，会触发 shell 沙箱检查；Windows 上可用的后端要求 ACL 临时目录位于 workspace 之外，不满足即拒绝执行。0.1.1 改用 Node 内置 `https` 直接请求，不再依赖 shell 与 python，Windows / macOS / Linux 均正常。
+
+**升级后仍是旧版？** pnpm 可能命中旧的 lockfile。显式指定版本重装即可：`dsh plugin --profile web add @badai147/dsh-ocgo-usage@0.1.1`，重启 `dsh web` 生效。
+
 ## License
 
 [MIT](LICENSE)
