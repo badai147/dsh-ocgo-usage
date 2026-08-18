@@ -8,7 +8,7 @@ Show your OpenCode Go usage in the DeepSeek Harness web sidebar's bottom-left co
 
 ## 功能 / Features
 
-- 左下角常驻按钮（与设置按钮同列同款）：仪表盘图标 + **剩余用量百分比**，剩余 ≤20% 变橙、≤0 变红
+- 左下角常驻按钮（与设置按钮同列同款）：仪表盘图标 + **本月剩余用量百分比**，剩余 ≤20% 变橙、≤0 变红
 - 悬停展开明细卡片（向上弹出）：滚动 / 本周 / 本月三条用量进度 + 已用百分比 + 重置时间
 - 数据每 60 秒自动刷新
 - 零配置：自动读取 DSH 供应商配置中的 opencode-go API key（`~/.dsh/.ocg-state.json` → `~/.dsh/.credentials.yaml` → 环境变量）
