@@ -28,6 +28,8 @@ dsh plugin --profile web add github:badai147/dsh-ocgo-usage
 
 重启 `dsh web`，左下角（设置按钮旁）即可看到「Go 用量」按钮。
 
+> 💡 安装后重启 `dsh web` 生效；自 0.1.1 起为纯 Node 实现，无需系统安装 python3。
+
 ## 使用 / Usage
 
 1. 在 DSH 设置中配置 opencode-go 供应商（含 API key）——插件自动读取，无需额外配置
