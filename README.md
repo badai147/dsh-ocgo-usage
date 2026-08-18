@@ -4,6 +4,8 @@
 
 Show your OpenCode Go usage in the DeepSeek Harness web sidebar's bottom-left corner.
 
+![底部用量按钮与悬停卡片](dsh-ocgo-usage.png)
+
 ## 功能 / Features
 
 - 左下角常驻按钮（与设置按钮同列同款）：仪表盘图标 + **剩余用量百分比**，剩余 ≤20% 变橙、≤0 变红
