@@ -9,7 +9,8 @@ Show your OpenCode Go usage in the DeepSeek Harness web sidebar's bottom-left co
 ## 功能 / Features
 
 - 左下角常驻按钮（与设置按钮同列同款）：仪表盘图标 + **本月剩余用量百分比**，剩余 ≤20% 变橙、≤0 变红
-- 悬停展开明细卡片（向上弹出）：滚动 / 本周 / 本月三条用量进度 + 已用百分比 + 重置时间
+- 悬停展开明细卡片（向上弹出）：**DeepSeek 高峰时段时间轴**（北京时间）+ 滚动 / 本周 / 本月三条用量进度 + 已用百分比 + 重置时间
+- 高峰时段按北京时间展示：DeepSeek V4 Flash / Pro 高峰 09:00-12:00、14:00-18:00（即 UTC 01:00-04:00、06:00-10:00）；时间轴高亮当前时刻所处区间并显示距下一切换点的剩余时间
 - 数据每 60 秒自动刷新
 - 零配置：自动读取 DSH 供应商配置中的 opencode-go API key（`~/.dsh/.ocg-state.json` → `~/.dsh/.credentials.yaml` → 环境变量）
 - 零构建：Client 端为手写 `__ModuleLoader__` bundle，Host 端为纯 Node ESM
@@ -56,6 +57,7 @@ dsh-ocgo-usage/
 
 ## 更新日志 / Changelog
 
+- **0.2.0**：悬浮卡片新增「DeepSeek V4 Flash / Pro」高峰时段时间轴（按北京时间标记高峰 09:00-12:00 与 14:00-18:00，显示当前所处时段及距下一切换点的时间），纯 Client 本地计算、不依赖浏览器时区
 - **0.1.1**：改用 Node 内置 https 取数（不再依赖 shell/python，修复 Windows 沙箱报错）；角标改显本月剩余用量（带 `(本月)` 后缀）
 - **0.1.0**：初版，左下角用量按钮 + 悬停明细卡片，每 60 秒刷新
 
