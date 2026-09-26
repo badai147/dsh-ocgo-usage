@@ -1,5 +1,10 @@
 # dsh-ocgo-usage
 
+> **本仓库已归档，不再维护。**
+> 代码保持原样，现有版本仍可正常安装使用，但不会再有新功能或修复，也不再处理 issue 与 PR。
+>
+> **Archived / unmaintained.** The plugin still installs and works as-is, but receives no further updates, fixes, or issue responses.
+
 在 DeepSeek Harness Web 侧边栏左下角显示 OpenCode Go 用量的插件。
 
 Show your OpenCode Go usage in the DeepSeek Harness web sidebar's bottom-left corner.
